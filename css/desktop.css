@@ -1,0 +1,157 @@
+/* SAVED FONTS */
+@font-face{
+    font-family : "Oswald"
+    src : url(../fonts/oswaldFont.ttf);
+  }
+  
+  @font-face{
+    font-family : "Caviar Dreams Bold Italic"
+    src : url(../fonts/CaviarDreams_BoldItalic.ttf);
+  }
+  
+  
+  body{
+    background-color : rgba(5,157,240,0.1);
+  }
+  
+  
+  #wrap{
+    padding: 5px;
+    /* background-color : rgba(250,182,85,98); */
+  }
+  
+  .pageHeading{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+  }
+  
+  #socialMediaNavigation{
+    padding : 10px;
+    width : 45px;
+    height : 300px;
+    background-color : rgba(0,0,0,0.1);
+    position : fixed;
+    right : 0px;
+    top: 45%;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  #wrap{
+    width : 1024px;
+    margin : 0 auto;
+  }
+  
+  
+  header{
+      border : solid 0px black;
+      /* height : 100px; */
+      padding : 0px;
+      display : flex;
+      flex-direction : row;
+      align-items : center;
+      justify-content : center;
+  }
+  
+  nav{
+    border : solid 0px purple;
+    width:100%;
+  }
+  nav ul{
+    border : solid 0px purple;
+    list-style : none;
+    margin : 0px;
+    padding : 0px;
+    display : flex;
+  }
+  nav ul li{
+    margin-top : 10px;
+    margin-left : 10px;
+    margin-right : 10px;
+    border : solid 0px blue;
+    background-color : rgba(5,157,240,0.6);
+    padding : 0px;
+    flex-grow : 1;
+    text-align : center;
+    display : flex;
+    flex-direction: row;
+    justify-content : space-evenly;
+  }
+  nav ul a{
+    width : 85%;
+    padding : 20px;
+  }
+  nav ul a:link{
+    color : white;
+    text-decoration: none;
+  }
+  nav ul a:hover{
+    background-color : rgba(5,157,240,0.3);
+  }
+  nav ul a:active{
+    color : black;
+  }
+  nav ul a:visited{
+    color : white;
+    text-decoration: none;
+  }
+  nav ul a:focus{
+    background : rgba(5,157,240,0.1);
+    outline : none;
+  }
+  
+  
+  /* CUSTOM CSS FOR HOME PAGE */
+  #biography, #indexMoreText{
+    padding : 20px;
+    border : solid 0px brown;
+    min-height : 45vh;
+    display : flex;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  
+  #biography{
+    align-items: center;
+  }
+  
+  #biography img{
+    border : solid 6px rgba(86,105,115,45); /* dark gray */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    min-height: 25vh;
+    min-width: 25vh;
+    max-height: 25vh;
+    max-width: 25vh;
+  }
+  #biography article{
+    border : solid 6px rgba(86,105,115,45); /* dark gray */
+    background-color : rgba(227,234,231,0.7);
+    margin: 5px;
+    padding : 5px;
+    flex-grow : 2.5;
+    min-width : 60%;
+    max-width : 60%;
+    text-align: center;
+  }
+  #biography p{
+    color : #486B5C;
+    font-family:"helvetica";
+  }
+  
+  #indexMoreText{
+    justify-content: space-between;
+  }
+  #indexText1{
+    border : solid 1px yellow;
+    flex-grow : 1;
+    text-align : center;
+  }
+  #indexText2{
+    border : solid 1px yellow;
+    flex-grow : 1;
+    text-align : center;
+  }

@@ -1,30 +1,99 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-<html lang = "en" dir = "ltr">
+  <head>
+    <meta charset="utf-8">
 
-    <head>
+    <title> Official Homepage of Nicholas Lin </title>
 
-        <meta charset = "utf-8">
+    <!-- Media Query for Narrow Browswer Width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+    <!-- Media Query for Medium Browser Width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+    <!-- Media Query for Full Browswer Width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+    <!-- Prevent mobile devices from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
 
-        <title> Nicholas Lin </title>
+    <style>
+      html{
+        background-image : url(images/nycSkyline.jpg);
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-attachment:fixed;
+        background-size:cover;
+      }
 
-        <!-- Media Query for Narrow Browser Width -->
-        <link rel = "stylesheet" media = "only screen and (max-width: 480px" href = "css/mobile.css">
-        <!-- Media Query for Medium Browser Width -->
-        <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
-        <!-- Media Query for Full Browser Width -->
-        <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
-        <!-- Prevent mobile devices from scaling pages down -->
-        <meta name = "viewport" content = "initial-scale=1">
+      #biographyParagraph{
+        padding-top : 20px;
+        padding-bottom : 20px;
+      }
+    </style>
 
-        <style>
-            html{
+  </head>
 
-            }
 
-            #bioPara{
-                padding-top : 20px;
-                padding-bottom: 20px;
-            }
-        </style>
-    </head>
+  <body>
+    <div id = "socialMediaNavigation">
+      <a href="https://www.facebook.com/">
+        <img src="socialMediaImages/facebookIcon.png" width = "48" height = "48"/>
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="socialMediaImages/instagramIcon.webp" width = "48" height = "48"/>
+      </a>
+      <a href="https://www.twitter.com/">
+        <img src="socialMediaImages/twitterIcon.png" width = "48" height = "48"/>
+      </a>
+      <a href="https://www.tiktok.com/">
+        <img src="socialMediaImages/tikTok.jpg" width = "48" height = "48"/>
+      </a>
+    </div>
+
+    <div id = "wrap">
+        <header>
+          <nav>
+            <ul>
+              <li>
+                 <a href="index.html"> HOME  </a>
+              </li>
+              <li>
+                <a href="fitness.html"> FITNESS </a>
+              </li>
+              <li>
+                <a href="nutrition.html"> NUTRITION </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <section id = "biography">
+          <div>
+            <img src="images/pensivePenguin.jpg" alt= "Profile Picture">
+          </div>
+          <article>
+            <p id = "biographyParagraph">
+              Welcome to my website! My name is Nicholas Lin and I'm glad you've taken the time out of your
+              day to learn a little bit more about me. One of my passions is fitness and nutrition and I'm
+              super happy to be able to share that excitement with you. On the following pages, I'll share my philosophy on both health and exercise. I'll give a general guide
+              about where to start if someone wanted to get into the gym and start working on themselves. Additionally, I'll
+              include two of my favorite recipes right now that have allowed me to have a truly sustainable diet. Hopefully
+              the information finds you well as this is just one of the topics that I feel I truly have experienced thoroughly.
+              I would love for others to be able to have the same enjoyment as I do when it comes to pursuing a sustainable and
+              healthy lifestyle and hopefully this short interest site can help you realize your own potential!
+            </p>
+          </article>
+        </section>
+
+        <!-- <section id = "indexMoreText">
+          <div id = "indexText1">
+            <h1> TEXT 1</h1>
+          </div>
+          <div id = "indexText2">
+            <h1> TEXT 2 </h1>
+          </div>
+        </section> -->
+
+    </div>
+  </body>
+
+</html>
