@@ -2,23 +2,14 @@
   Light Navy Blue: background-color : rgba(5,157,240,0.4);
 
 */
-
-/* SAVED FONTS */
-@font-face{
-  font-family : "Oswald"
-  src : url(../fonts/oswaldFont.ttf);
-}
-
 @font-face{
   font-family : "Caviar Dreams Bold Italic"
-  src : url(../fonts/CaviarDreams_BoldItalic.ttf);
+  src: url(../fonts/CaviarDreams_BoldItalic.ttf);
 }
-
 
 body{
   background-color : rgba(5,157,240,0.1);
 }
-
 
 #wrap{
   padding: 5px;
@@ -30,28 +21,17 @@ body{
 }
 
 #socialMediaNavigation{
-  padding : 10px;
-  width : 45px;
-  height : 300px;
-  background-color : rgba(0,0,0,0.1);
-  position : fixed;
-  right : 0px;
-  top: 45%;
-  display : flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display : none;
 }
 
 #wrap{
-  width : 1024px;
+  width : 100%;
   margin : 0 auto;
 }
 
-
 header{
     border : solid 0px black;
-    /* height : 100px; */
-    padding : 0px;
+    height : 100px;
     display : flex;
     flex-direction : row;
     align-items : center;
@@ -60,30 +40,29 @@ header{
 
 nav{
   border : solid 0px purple;
-  width:100%;
+  width : 100%;
 }
 nav ul{
   border : solid 0px purple;
   list-style : none;
   margin : 0px;
   padding : 0px;
-  display : flex;
+  display: flex;
 }
 nav ul li{
   margin-top : 10px;
   margin-left : 10px;
   margin-right : 10px;
+  width : 100%;
   border : solid 0px blue;
   background-color : rgba(5,157,240,0.6);
-  padding : 0px;
-  flex-grow : 1;
-  text-align : center;
   display : flex;
-  flex-direction: row;
-  justify-content : space-evenly;
+  justify-content: center;
+  text-align : center;
 }
 nav ul a{
-  width : 85%;
+  border : solid 0px black;
+  width : 100%;
   padding : 20px;
 }
 nav ul a:link{
@@ -118,6 +97,7 @@ nav ul a:focus{
 
 #biography{
   align-items: center;
+  flex-direction : column;
 }
 
 #biography img{
@@ -146,7 +126,6 @@ nav ul a:focus{
   color : #486B5C;
   font-family:"helvetica";
 }
-
 #indexMoreText{
   justify-content: space-between;
 }
@@ -164,12 +143,11 @@ nav ul a:focus{
 
 /* CUSTOM CSS FOR ABOUT PAGE */
 #aboutIntro{
-  border: solid 4px rgba(133,98,66,52);
-  padding : 10px;
-  margin-top : 20px;
-  margin-left : 20px;
-  margin-right : 20px;
+  border: solid 2px rgba(133,98,66,52);
   text-align:center;
+  margin-left : 10px;
+  margin-right : 10px;
+  margin-top : 10px;
 }
 #aboutMe1, #aboutMe2, #aboutMe3{
   padding : 20px;
@@ -181,7 +159,7 @@ nav ul a:focus{
   align-items: center;
 }
 #aboutMe1 div, #aboutMe2 div, #aboutMe3 div{
-  border : solid 4px rgba(209,166,61,82);
+  border : solid 2px rgba(209,166,61,82);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,8 +187,11 @@ nav ul a:focus{
 
 /* CUSTOM CSS FOR FITNESS PAGE */
 #fitnessIntro{
-  border: solid 4px rgba(109,138,122,54);
-  margin : 20px;
+  border: solid 2px rgba(109,138,122,54);
+  margin-top : 5px;
+  margin-bottom : 15px;
+  margin-left : 25px;
+  margin-right : 25px;
   text-align:center;
 }
 #fitness1, #fitness2, #fitness3{
@@ -219,7 +200,7 @@ nav ul a:focus{
     min-height : 30vh;
     display : flex;
     justify-content: center;
-    align-items : center;
+    align-items: center;
 }
 
 #fitness1 div, #fitness2 div, #fitness3 div{
@@ -260,19 +241,18 @@ nav ul a:focus{
 
 /* CUSTOM CSS FOR NUTRITION PAGE */
 #recipeIntro{
-  border : solid 4px rgba(132,128,122,32);
+  border : solid 2px rgba(132,128,122,32);
   background-color: rgba(246,240,208,0.8);
-  margin : 25px;
-  padding : 10px;
-  text-align: center;
+  margin : 10px;
+  padding : 5px;
   display: flex;
-  flex-direction: column;
+  flex-direction : column;
   text-align: center;
   align-content: center;
   align-items: center;
 }
 #recipeIntroBlurb{
-  width : 83%;
+  width : 75%;
   border : solid 4px rgba(125,181,184,72);
   background-color : rgba(137,206,209,0.8);
   margin: auto;
@@ -292,11 +272,12 @@ nav ul a:focus{
   align-items: center;
   justify-content: center;
 }
+
 .recipePhotos{
-  border : solid 4px rgba(191,101,45,0.8);
+  border : solid 4px rgb(191,101,45);
   background-color: rgba(222,226,219,0.8);
-  width : 270px;
-  height : 270px;
+  width : 275px;
+  height : 275px;
   margin : 10px;
   display : flex;
   align-items: center;
@@ -321,10 +302,9 @@ nav ul a:focus{
     text-align: center;
 }
 #recipeInstructions1 article, #recipeInstructions2 article{
-     border : solid 4px #858079;
-     background-color : rgba(255,246,217,0.8);
-     margin : 10px;
-     padding : 20px;
+     border : solid 2px black;
+     margin : 5px;
+     padding : 0px;
      flex-grow : 2;
      max-width : 75%;
      text-align: center;
