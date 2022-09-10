@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head> 
+
+    <meta charset="utf-8">
+    
+    <!-- favicon logos imported from favicon.io -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title> HOME </title>
+
+    <!-- CSS only component of Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+
+    <!-- Media Query for Narrow Browswer Width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+    <!-- Media Query for Medium Browser Width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+    <!-- Media Query for Full Browswer Width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+    <!-- Prevent mobile devices from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+
+    <style>
+        
+        html{
+            /* background-image : url(images/texturedBackground.jpg); */
+            /* background-repeat:no-repeat; */
+            background-position:center center;
+            background-attachment:fixed;
+            background-size:cover;
+        }
+
+        #biographyParagraph{
+            padding-top : 20px;
+            padding-bottom : 20px;
+        }
+
+    </style>
+
+</head>
+
+
+<body> 
+
+    <div id = "socialNav">
+        <a href="https://www.linkedin.com/in/nicholxslin">
+            <img src="images/linkedin.png" width = "48" height = "48"/>
+        </a>
+    </div>
+
+    <div id = "wrap">
+    
+        <header>
+          <!-- TODO: Optimize Navbar here -->
+        <div class="container-fluid noMargin">
+          <div id = "nav" class = "row">
+            <div class="col-md-12 noMargin">
+            <!-- Navigation Starts Here -->
+              <nav class="navbar navbar-expand-lg navbar-light fullWidth" style = "background-color : #e3f2fd">
+                <div class="container-fluid">
+                  <a class= "navbar-brand" href="index.html"> HOME </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="material-icons-outlined">
+                      <img src="images/hamburger.png"/ class = "hamburger">
+                    </span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" aria-current="page" href="index.html"> Home </a>
+                    </div>
+                    <div class="navbar-nav">
+                      <a class="nav-link" aria-current="page" href="help.html"> Resume </a>
+                    </div>
+                    <div class="navbar-nav">
+                      <a class="nav-link" aria-current="page" href="projects.html"> Projects </a>
+                    </div>
+                    <div class="navbar-nav">
+                      <a class="nav-link" aria-current="page" href="help.html"> Contact </a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- Navbar ends here -->
+        </header>
+
+        <section id = "aboutMeTitle">
+            <h1 class = "pageHeading"> About Me </h1>
+        </section>
+
+        <section id = "biography">
+            <div> 
+                <img src = "images/pensivePenguin.jpg" alt = "Profile Picture"> 
+            </div>
+            <article>
+                <p id = "bioParagraph">
+                    I am an undergraduate student studying Data Science and Computer Science at 
+                    New York University. I am experienced in both Python as well as Java, and due
+                    to my extensive course and project experience, I am confident in both the 
+                    technical and statistical aspects of both data and software engineering.
+                    <br> <br>
+                    A brief summary of my project and course experience can both be found at the bottom
+                    of this page as well as in more detail through the links provided on this page.
+                    <br> <br>
+                    If you have any questions at all, feel free to reach out through the contact links
+                    through either this site or my contact page which is also linked.
+                    <br> <br>
+                    I look forward to hearing from you soon!
+                </p>
+            </article>
+        </section>
+
+        <section id = "projectPreview">
+            <h1 class="pageHeading"> Project Previews </h1>
+        </section>
+        
+        <section id = "projectDescription">
+            <p>
+                This is simply a brief overview and summary of some of the projects I've explored
+                as well as the technologies and programming languages which I utilized in order 
+                to complete said projects. 
+                <br> <br>
+                If any of the projects interest you, they are featured
+                in further detail within my projects page which can be accessed through my projects 
+                page which is also linked on this site!
+            </p>
+        </section>
+
+    </div>
+
+    <div id="mainArea" class="row" style="margin-top:0px; min-height: 35vh;">
+        <div class="col-md-12 noPadding">
+          <!-- Photo Carousel Slideshow Starts Here -->
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+  
+            <div class="carousel-inner">
+  
+              <div class="carousel-item active homepageCarouselDiv">
+                <img src="images/stuy.jpg" class="d-block w-100 carouselImage" alt="stuy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4> There is more than enough food produced in the world to feed everyone on the planet </h4>
+                  <p> Yet as many as 811 million worldwide go to bed hungry every night </p>
+                </div>
+              </div>
+  
+              <div class="carousel-item homepageCarouselDiv">
+                <img src="images/stuy.jpg" class="d-block w-100 carouselImage" alt="stuy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4> Those who produce the food are often the ones who suffer from poverty and hunger </h4>
+                  <p>
+                    Small farmers, herders, and fishermen produce around 70% of the global food supply and yet
+                    poverty and hunger are most prevalent among these rural populations
+                  </p>
+                </div>
+              </div>
+  
+              <div class="carousel-item homepageCarouselDiv">
+                <img src="images/stuy.jpg" class="d-block w-100 carouselImage" alt="stuy">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4> An estimated 14 million children under the age of 5 suffer from severe acute malnutrition worldwide </h4>
+                  <p> Yet over 75% of these malnourished children don't have access to lifesaving treatment. </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+     <!-- Bootstrap Originated JavaScript Bundle with Popper -->
+     <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
+     <!-- Scripts for JavaScript implementations -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="js/custom.js"> </script>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

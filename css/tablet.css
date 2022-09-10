@@ -1,0 +1,311 @@
+/* SAVED COLORS
+  Light Navy Blue: background-color : rgba(5,157,240,0.4);
+
+*/
+@font-face{
+  font-family : "Caviar Dreams Bold Italic"
+  src: url(../fonts/CaviarDreams_BoldItalic.ttf);
+}
+
+body{
+  background-color : rgba(5,157,240,0.1);
+}
+
+#wrap{
+  padding: 5px;
+  /* background-color : rgba(250,182,85,98); */
+}
+
+.pageHeading{
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+#socialMediaNavigation{
+  display : none;
+}
+
+#wrap{
+  width : 100%;
+  margin : 0 auto;
+}
+
+header{
+    border : solid 0px black;
+    height : 100px;
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+    justify-content : center;
+}
+
+nav{
+  border : solid 0px purple;
+  width : 100%;
+}
+nav ul{
+  border : solid 0px purple;
+  list-style : none;
+  margin : 0px;
+  padding : 0px;
+  display: flex;
+}
+nav ul li{
+  margin-top : 10px;
+  margin-left : 10px;
+  margin-right : 10px;
+  width : 100%;
+  border : solid 0px blue;
+  background-color : rgba(5,157,240,0.6);
+  display : flex;
+  justify-content: center;
+  text-align : center;
+}
+nav ul a{
+  border : solid 0px black;
+  width : 100%;
+  padding : 20px;
+}
+nav ul a:link{
+  color : white;
+  text-decoration: none;
+}
+nav ul a:hover{
+  background-color : rgba(5,157,240,0.3);
+}
+nav ul a:active{
+  color : black;
+}
+nav ul a:visited{
+  color : white;
+  text-decoration: none;
+}
+nav ul a:focus{
+  background : rgba(5,157,240,0.1);
+  outline : none;
+}
+
+
+/* CUSTOM CSS FOR HOME PAGE */
+#biography, #indexMoreText{
+  padding : 20px;
+  border : solid 0px brown;
+  min-height : 45vh;
+  display : flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+#biography{
+  align-items: center;
+  flex-direction : column;
+}
+
+#biography img{
+  border : solid 6px rgba(86,105,115,45); /* dark gray */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  min-height: 25vh;
+  min-width: 25vh;
+  max-height: 25vh;
+  max-width: 25vh;
+}
+#biography article{
+  border : solid 6px rgba(86,105,115,45); /* dark gray */
+  background-color : rgba(227,234,231,0.7);
+  margin: 5px;
+  padding : 5px;
+  flex-grow : 2.5;
+  min-width : 60%;
+  max-width : 60%;
+  text-align: center;
+}
+#biography p{
+  color : #486B5C;
+  font-family:"helvetica";
+}
+#indexMoreText{
+  justify-content: space-between;
+}
+#indexText1{
+  border : solid 1px yellow;
+  flex-grow : 1;
+  text-align : center;
+}
+#indexText2{
+  border : solid 1px yellow;
+  flex-grow : 1;
+  text-align : center;
+}
+
+
+/* CUSTOM CSS FOR ABOUT PAGE */
+#aboutIntro{
+  border: solid 2px rgba(133,98,66,52);
+  text-align:center;
+  margin-left : 10px;
+  margin-right : 10px;
+  margin-top : 10px;
+}
+#aboutMe1, #aboutMe2, #aboutMe3{
+  padding : 20px;
+  border : solid 0px green;
+  min-height : 35vh;
+  display : flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#aboutMe1 div, #aboutMe2 div, #aboutMe3 div{
+  border : solid 2px rgba(209,166,61,82);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  min-height: 25vh;
+  min-width: 25vh;
+  max-height: 25vh;
+  max-width: 25vh;
+}
+#aboutMe1 article, #aboutMe2 article, #aboutMe3 article{
+  border : solid 4px rgba(133,99,16,52);
+  background-color : rgba(209,166,61,0.8);
+  margin: 5px;
+  padding : 5px;
+  flex-grow : 2.5;
+  min-height: 25vh;
+  min-width: 55%;
+  max-height: 25vh;
+  max-width: 25vh;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/* CUSTOM CSS FOR FITNESS PAGE */
+#fitnessIntro{
+  border: solid 2px rgba(109,138,122,54);
+  margin-top : 5px;
+  margin-bottom : 15px;
+  margin-left : 25px;
+  margin-right : 25px;
+  text-align:center;
+}
+#fitness1, #fitness2, #fitness3{
+    border : solid 0px blue;
+    padding : 10px;
+    min-height : 30vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fitness1 div, #fitness2 div, #fitness3 div{
+    border : solid 4px rgba(78,209,230,90);
+    margin : 5px;
+    padding : 5px;
+    display : flex;
+    flex-grow : 2;
+    max-width : 20vh;
+    min-width : 20vh;
+    max-height : 20vh;
+    min-height : 20vh;
+    text-align: center;
+    align-content : center;
+}
+
+#fitness1 article, #fitness2 article, #fitness3 article{
+     border : solid 4px rgba(4,84,97,38);
+     margin : 5px;
+     padding : 15px;
+     padding-left : 25px;
+     padding-right : 25px;
+     flex-grow : 1;
+     min-width : 60%;
+     max-width : 60%;
+     text-align: center;
+}
+#fitnessMachines{
+  width : 101%;
+}
+#cbumDeadlift{
+  width : 101%;
+}
+#homeGym{
+  width : 101%;
+}
+
+
+/* CUSTOM CSS FOR NUTRITION PAGE */
+#recipeIntro{
+  border : solid 2px rgba(132,128,122,32);
+  background-color: rgba(246,240,208,0.8);
+  margin : 10px;
+  padding : 5px;
+  display: flex;
+  flex-direction : column;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+#recipeIntroBlurb{
+  width : 75%;
+  border : solid 4px rgba(125,181,184,72);
+  background-color : rgba(137,206,209,0.8);
+  margin: auto;
+  padding : 15px;
+  display : flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+#favoriteRecipePictures{
+  border : solid 0px green;
+  display : flex;
+  flex-wrap : wrap;
+  justify-content : space-between;
+  flex-direction : row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipePhotos{
+  border : solid 4px rgb(191,101,45);
+  background-color: rgba(222,226,219,0.8);
+  width : 275px;
+  height : 275px;
+  margin : 10px;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#recipeInstructions1, #recipeInstructions2{
+  padding : 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: space-between;
+  margin: auto;
+}
+#recipeInstructions1 div, #recipeInstructions2 div{
+    border : solid 4px #948312;
+    background-color: rgba(224,211,128,0.8);
+    margin : 0px;
+    padding : 5px;
+    flex-grow : 1;
+    max-width: 25%;
+    text-align: center;
+}
+#recipeInstructions1 article, #recipeInstructions2 article{
+     border : solid 2px black;
+     margin : 5px;
+     padding : 0px;
+     flex-grow : 2;
+     max-width : 75%;
+     text-align: center;
+}

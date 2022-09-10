@@ -1,0 +1,13 @@
+Zestimate
+Created machine learning nutritional label for Zillow Automated Decision System
+- Pre-processing methods such as label encoding and data imputation performed to standardize both training and test datasets
+- Logistical training model fit on dataset and predictions were then made after cross-validation of model
+- Effectiveness and accuracy of ADS analyzed with consideration also to fairness and diversity metrics
+- Individual feature importance within trained model represented using visualization libraries
+- Fairness metrics such as accuracy, predictive parity (calibration), and false and true negative rate of system analyzed to lessen disparate impact and increase transparency of use
+
+Predictive High School
+- Analyzed NYC DOE dataset of middle schools to determine characteristics contributing to admission to one of 8 NYC high selective public high schools (Stuyvesant, Bronx Science, etc.)
+- Pre-processing along with feature analysis conducted on provided dataset
+- Visualization libraries incorporated along with usage of statistical query models to give insight into feature weights and breakdowns within datasets
+- Correlations between features and outcomes determined and statistical tests and observations performed for further analysis
