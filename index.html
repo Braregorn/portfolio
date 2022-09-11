@@ -29,16 +29,11 @@
     <style>
         
         html{
-            /* background-image : url(images/texturedBackground.jpg); */
-            /* background-repeat:no-repeat; */
+            background-image : url(images/texturedBackground.jpg);
+            background-repeat:no-repeat;
             background-position:center center;
             background-attachment:fixed;
             background-size:cover;
-        }
-
-        #biographyParagraph{
-            padding-top : 20px;
-            padding-bottom : 20px;
         }
 
     </style>
@@ -57,18 +52,19 @@
     <div id = "wrap">
     
         <header>
-          <!-- TODO: Optimize Navbar here -->
-        <div class="container-fluid noMargin">
+
+        <!-- TODO: Optimize Navbar here -->
+        <div class="container">
           <div id = "nav" class = "row">
             <div class="col-md-12 noMargin">
             <!-- Navigation Starts Here -->
-              <nav class="navbar navbar-expand-lg navbar-light fullWidth" style = "background-color : #e3f2fd">
+              <nav class="navbar fixed-top navbar-expand-lg navbar-light" style = "background-color : #e3f2fd">
                 <div class="container-fluid">
                   <a class= "navbar-brand" href="index.html"> HOME </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <!-- <span class="navbar-toggler-icon"></span> -->
                     <span class="material-icons-outlined">
-                      <img src="images/hamburger.png"/ class = "hamburger">
+                      <img src="images/hamburger.png" class = "hamburger" width = 64 height = 64>
                     </span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -91,6 +87,7 @@
           </div>
         </div>
         <!-- Navbar ends here -->
+
         </header>
 
         <section id = "aboutMeTitle">
@@ -125,19 +122,17 @@
         
         <section id = "projectDescription">
             <p>
-                This is simply a brief overview and summary of some of the projects I've explored
-                as well as the technologies and programming languages which I utilized in order 
-                to complete said projects. 
+                This is a brief overview of some of the projects I've explored as well as the <br> 
+                technologies and programming languages which I utilized within those projects. 
                 <br> <br>
-                If any of the projects interest you, they are featured
-                in further detail within my projects page which can be accessed through my projects 
-                page which is also linked on this site!
+                If any of the projects interest you, they can be accessed through the link to my <br>
+                projects page where they are featured and presented in further detail.
             </p>
         </section>
 
     </div>
 
-    <div id="mainArea" class="row" style="margin-top:0px; min-height: 35vh;">
+    <div id="mainArea" class="row" style="margin-top:25px; margin:auto; min-height: 35vh; max-width: 105vh; align-self:center;">
         <div class="col-md-12 noPadding">
           <!-- Photo Carousel Slideshow Starts Here -->
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -149,27 +144,31 @@
   
             <div class="carousel-inner">
   
+              <!-- First Carousel Card -->
               <div class="carousel-item active homepageCarouselDiv">
-                <img src="images/stuy.jpg" class="d-block w-100 carouselImage" alt="stuy">
+                <img src="images/stuy.png" class="d-block w-100 carouselImage" alt="stuy">
                 <div class="carousel-caption d-none d-md-block">
-                  <h4> There is more than enough food produced in the world to feed everyone on the planet </h4>
-                  <p> Yet as many as 811 million worldwide go to bed hungry every night </p>
+                  <h4> Predictive Analysis of Student Success and <br> Acceptance to Highly Selective NYC High Schools </h4>
+                  <p> Using Python and its respective data science visualization libraries to analyze various <br>
+                    NYC DOE provided datasets, predict student and school outcomes, and report the features <br>
+                    impacting student success and acceptance to highly selective high schools witin NYC. </p>
                 </div>
               </div>
   
               <div class="carousel-item homepageCarouselDiv">
-                <img src="images/stuy.jpg" class="d-block w-100 carouselImage" alt="stuy">
+                <img src="images/zestimate.png" class="d-block w-100 carouselImage" alt="stuy">
                 <div class="carousel-caption d-none d-md-block">
-                  <h4> Those who produce the food are often the ones who suffer from poverty and hunger </h4>
+                  <h4> Zestimate Automated Decision System Machine Learning <br> and AI Interpretability "Nutritional Label" </h4>
                   <p>
-                    Small farmers, herders, and fishermen produce around 70% of the global food supply and yet
-                    poverty and hunger are most prevalent among these rural populations
+                    Public property sale records were pre-processed and a logistical training model was fit onto the 
+                    cleaned dataset. Cross-validation of the trained model revealed individual feature importance allowing 
+                    for fairness metrics to be assessed and to increase transparency of use.
                   </p>
                 </div>
               </div>
   
               <div class="carousel-item homepageCarouselDiv">
-                <img src="images/stuy.jpg" class="d-block w-100 carouselImage" alt="stuy">
+                <img src="images/stuy.png" class="d-block w-100 carouselImage" alt="stuy">
                 <div class="carousel-caption d-none d-md-block">
                   <h4> An estimated 14 million children under the age of 5 suffer from severe acute malnutrition worldwide </h4>
                   <p> Yet over 75% of these malnourished children don't have access to lifesaving treatment. </p>
