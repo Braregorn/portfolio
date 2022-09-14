@@ -29,7 +29,7 @@
     <style>
         
         html{
-            background-image : url(images/texturedBackground.jpg);
+            background-color :#e3f2fd;
             background-repeat:no-repeat;
             background-position:center center;
             background-attachment:fixed;
@@ -53,18 +53,18 @@
     
         <header>
 
-        <!-- TODO: Optimize Navbar here -->
+        <!-- Navbar starts here -->
         <div class="container">
           <div id = "nav" class = "row">
             <div class="col-md-12 noMargin">
             <!-- Navigation Starts Here -->
               <nav class="navbar fixed-top navbar-expand-lg navbar-light" style = "background-color : #e3f2fd">
                 <div class="container-fluid">
-                  <a class= "navbar-brand" href="index.html"> HOME </a>
+                  <a class= "navbar-brand"> HOME </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <!-- <span class="navbar-toggler-icon"></span> -->
                     <span class="material-icons-outlined">
-                      <img src="images/hamburger.png" class = "hamburger" width = 64 height = 64>
+                      <img src="images/hamburger.png" class = "hamburger" width = 24 height = 24>
                     </span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -72,13 +72,13 @@
                       <a class="nav-link" aria-current="page" href="index.html"> Home </a>
                     </div>
                     <div class="navbar-nav">
-                      <a class="nav-link" aria-current="page" href="help.html"> Resume </a>
+                      <a class="nav-link" aria-current="page" href="resume.html"> Resume </a>
                     </div>
                     <div class="navbar-nav">
                       <a class="nav-link" aria-current="page" href="projects.html"> Projects </a>
                     </div>
                     <div class="navbar-nav">
-                      <a class="nav-link" aria-current="page" href="help.html"> Contact </a>
+                      <a class="nav-link" aria-current="page" href="contact.html"> Contact </a>
                     </div>
                   </div>
                 </div>
@@ -130,62 +130,65 @@
             </p>
         </section>
 
-    </div>
-
-    <div id="mainArea" class="row" style="margin-top:25px; margin:auto; min-height: 35vh; max-width: 105vh; align-self:center;">
-        <div class="col-md-12 noPadding">
-          <!-- Photo Carousel Slideshow Starts Here -->
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <!-- Project Carousel starts here-->
+        <div id="indexProjectCarousel" class="row" style="margin-top:25px; margin:auto; min-height: 35vh; max-width: 105vh; align-self:center;">
+          <div class="col-md-12 noPadding">
+            <!-- Photo Carousel Slideshow Starts Here -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+    
+              <div class="carousel-inner">
+    
+                <!-- First Carousel Card -->
+                <div class="carousel-item active homepageCarouselDiv">
+                  <img src="images/stuy.png" class="d-block w-100 carouselImage" alt="stuy">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4> Predictive Analysis of Student Success and <br> Acceptance to Highly Selective NYC High Schools </h4>
+                    <p> Using Python and its respective data science visualization libraries to analyze various <br>
+                      NYC DOE provided datasets, predict student and school outcomes, and report the features <br>
+                      impacting student success and acceptance to highly selective high schools witin NYC. </p>
+                  </div>
+                </div>
+    
+                <div class="carousel-item homepageCarouselDiv">
+                  <img src="images/zestimate.png" class="d-block w-100 carouselImage" alt="stuy">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4> Zestimate Automated Decision System Machine Learning <br> and AI Interpretability "Nutritional Label" </h4>
+                    <p>
+                      Public property sale records were pre-processed and a logistical training model was fit onto the 
+                      cleaned dataset. Cross-validation of the trained model revealed individual feature importance allowing 
+                      for fairness metrics to be assessed and to increase transparency of use.
+                    </p>
+                  </div>
+                </div>
+    
+                <div class="carousel-item homepageCarouselDiv">
+                  <img src="images/stuy.png" class="d-block w-100 carouselImage" alt="stuy">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4> An estimated 14 million children under the age of 5 suffer from severe acute malnutrition worldwide </h4>
+                    <p> Yet over 75% of these malnourished children don't have access to lifesaving treatment. </p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-  
-            <div class="carousel-inner">
-  
-              <!-- First Carousel Card -->
-              <div class="carousel-item active homepageCarouselDiv">
-                <img src="images/stuy.png" class="d-block w-100 carouselImage" alt="stuy">
-                <div class="carousel-caption d-none d-md-block">
-                  <h4> Predictive Analysis of Student Success and <br> Acceptance to Highly Selective NYC High Schools </h4>
-                  <p> Using Python and its respective data science visualization libraries to analyze various <br>
-                    NYC DOE provided datasets, predict student and school outcomes, and report the features <br>
-                    impacting student success and acceptance to highly selective high schools witin NYC. </p>
-                </div>
-              </div>
-  
-              <div class="carousel-item homepageCarouselDiv">
-                <img src="images/zestimate.png" class="d-block w-100 carouselImage" alt="stuy">
-                <div class="carousel-caption d-none d-md-block">
-                  <h4> Zestimate Automated Decision System Machine Learning <br> and AI Interpretability "Nutritional Label" </h4>
-                  <p>
-                    Public property sale records were pre-processed and a logistical training model was fit onto the 
-                    cleaned dataset. Cross-validation of the trained model revealed individual feature importance allowing 
-                    for fairness metrics to be assessed and to increase transparency of use.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="carousel-item homepageCarouselDiv">
-                <img src="images/stuy.png" class="d-block w-100 carouselImage" alt="stuy">
-                <div class="carousel-caption d-none d-md-block">
-                  <h4> An estimated 14 million children under the age of 5 suffer from severe acute malnutrition worldwide </h4>
-                  <p> Yet over 75% of these malnourished children don't have access to lifesaving treatment. </p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
-      </div>
+
+    </div>
+
+  
 
 
 
